@@ -8,6 +8,7 @@ import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
 import useNavbar from "@/hooks/useNavbar";
+import Link from "next/link";
 
 export default function Navbar() {
   const scrolled = useNavbar();
@@ -33,16 +34,17 @@ export default function Navbar() {
           <DesktopNav scrolled={scrolled} />
 
           <div className="hidden lg:block">
-            <button
-              className={clsx(
-                "rounded-full px-6 py-3 font-semibold transition-all duration-300",
-                scrolled
-                  ? "bg-gradient-to-r from-[#0B4EA2] to-[#00A9E0] text-white shadow-lg hover:scale-105"
-                  : "border border-white text-white hover:bg-white hover:text-[#0B4EA2]"
-              )}
-            >
-              Request Proposal
-            </button>
+            <Link
+  href="/contact-proposal"
+  className={clsx(
+    "rounded-full px-6 py-3 font-semibold transition-all duration-300",
+    scrolled
+      ? "bg-gradient-to-r from-[#0B4EA2] to-[#00A9E0] text-white shadow-lg hover:scale-105"
+      : "border border-white text-white hover:bg-white hover:text-[#0B4EA2]"
+  )}
+>
+  Request Proposal
+</Link>
           </div>
 
           <MobileNav scrolled={scrolled} />
