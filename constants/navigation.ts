@@ -17,8 +17,8 @@ export const navigation: NavItem[] = [
     href: "/products",
   },
   {
-    title: "Karier",
-    href: "/careers",
+    title: "News",
+    href: "/news",
   },
   {
     title: "Kontak",
