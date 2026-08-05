@@ -128,3 +128,28 @@
     @apply font-sans;
   }
 }
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.12);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 8s ease-in-out infinite alternate;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 28px;
+  border-radius: 999px;
+}
