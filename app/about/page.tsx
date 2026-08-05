@@ -17,7 +17,7 @@ export default function AboutPage() {
         <PageHero
           title="About Us"
           subtitle="Building Better Business Travel"
-          image="/images/about/about-hero.jpg"
+          image="/hero-about.png"
         />
         <WhoWeAre />
         <CoreValues />
